@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 void main() {
   CatcherOptions debugOptions = CatcherOptions(DialogReportMode(), [
     ConsoleHandler(),
-    ToastHandler(),
+    // ToastHandler(),
   ], filterFunction: (Report report) {
     if (report.error is ArgumentError) {
       return false;
